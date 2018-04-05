@@ -51,6 +51,22 @@ div.itemcontainer {
 	margin: 1vh 0 1vh 0;
 }
 
+img.itemimage {
+	width: 25%;
+}
+
+img.profile {
+	width: 20%;
+	border-radius: 50%;
+	border-left: 10px solid var(--shock);
+	border-right: 10px solid var(--shock);
+}
+
+h1.nametag {
+	margin: 0;
+	padding: 1vh 0 .2vh 0;
+}
+
 
 /*
 UTILITY
@@ -67,7 +83,7 @@ UTILITY
 	color: var(--shock);
 }
 
-.ucla {
+.ucla:hover {
 	color: #FFE522;
 	background-color: #3287BE;
 }
