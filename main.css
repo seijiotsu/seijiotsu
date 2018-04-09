@@ -52,14 +52,12 @@ div.itemcontainer {
 }
 
 img.itemimage {
-	width: 25%;
+	width: 45%;
 }
 
 img.profile {
 	width: 20%;
-	border-radius: 50%;
-	border-left: 10px solid var(--shock);
-	border-right: 10px solid var(--shock);
+	border-radius: 25%;
 }
 
 h1.nametag {
