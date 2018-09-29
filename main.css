@@ -52,7 +52,7 @@ div.itemcontainer {
 }
 
 img.itemimage {
-	width: 45%;
+	width: 65%;
 }
 
 img.profile {
@@ -81,7 +81,9 @@ UTILITY
 	color: var(--shock);
 }
 
-.ucla:hover {
+.ucla {
 	color: #FFE522;
 	background-color: #3287BE;
+	font-weight: 700;
+	padding: 0 3px 0 3px;
 }
