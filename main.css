@@ -6,13 +6,16 @@
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 1em;
+	font-size: 1.4em;
+	background: rgb(255,255,255);
+	background: linear-gradient(121deg, rgba(255,255,255,1) 0%, rgba(211,235,255,1) 31%, rgba(255,237,198,1) 55%, rgba(227,240,255,1) 84%, rgba(255,223,195,1) 100%);
 }
 
 .parent {
     display: flex;
     justify-content: center;
     align-items: center;
+	flex-direction: column;
     height: 95vh; /* adjust height as needed */
 }
 
@@ -20,24 +23,18 @@ body {
 	align-self: center;
 }
 
-div.main {
-	width: 50vh;
-	height: 30vh;
-    display: flex; /* Added this to enable vertical centering in the box */
-    align-items: center; /* This will center the content vertically */
-}
-
-img.profile {
-	width: 30vh;
-	border-radius: 25%;
-	margin-right: 2vw;
-}
 
 h1.nametag {
 	margin: 0;
 	padding: 1vh 0 .2vh 0;
 }
 
+img.profile {
+	animation: drop .4s linear forwards 1.2s;
+	width: 30vh;
+	border-radius: 25%;
+	filter: drop-shadow(0.5vw 1vw 1vw black);
+}
 
 /*
 UTILITY
@@ -49,3 +46,15 @@ UTILITY
 .shock {
 	color: var(--shock);
 }
+
+/* https://alvarotrigo.com/blog/css-text-animations/ */
+/* flipping class and key frames*/
+.flipX {
+	animation: 0.85s anim-flipX ease;
+  }
+  @keyframes anim-flipX {
+	0% {
+	  opacity: 0;
+	  transform: scale(0.7)
+	}
+  }
